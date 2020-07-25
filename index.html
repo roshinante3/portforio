@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1">
+    <meta name="description" content="小林千華のポートフォリオサイト">
+    <title>Portforio Site</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/MediaQueries.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MediaQueries.css">
+
+    <!--    googlefont-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <!-- 本体 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- effect -->
+    <script src="js/effect.js"></script>
+    <!-- modalwindow -->
+    <script src="js/modalwindow.js"></script>
+    <!-- object-fit IE用 -->
+    <script src="js/fitie.js"></script>
+    <!--    slick-->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+</head>
+
+<body id="index-page">
+    <header>
+        <div id="header__nav">
+            <ul class="h-nav nav__area">
+                <li class="h-nav__list"><a class="header__link" href="product01.html">WEBサイト</a></li>
+                <li class="h-nav__list"><a class="header__link" href="product02.html">バナー制作</a></li>
+                <li class="h-nav__list">
+                    <div class="content">
+                        <a class="header__link js-modal__link" href="#">ABOUT ME</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div id="profile" class="wrapper">
+        <h1 class="header__txt">My <br>
+            Portforio <br> Site</h1>
+        <div class="container profile__wrap effect-fade">
+            <div class="L-inner T-inner" id="profile__ph">
+                <div class="ph__inner">
+                    <img class="ph-fill" src="img/profile-ph.jpg" alt="プロフィール写真">
+                </div>
+            </div>
+            <div class="R-inner B-inner">
+                <div class="profile__inner">
+                    <p id="prof__name"><span>名前</span>小林　千華</p>
+                    <p id="prof__age"><span>年齢</span>32歳</p>
+                    <p id="prof__txt">事務職として働きながらWebサイト構築のノウハウを習得するため、1年間学校に通い実践的なWebサイト制作を学びました。HTML・CSSは問題なく使用出来ます。本サイトの制作物は全て1から制作したものです。</p>
+                </div>
+                <ul class="sns-list">
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100003136006689"><img src="svg/facebook.svg" alt="facebook" width="50" height="50"></a></li>
+                    <li><a target="_blank" href="http://Instagram.com/kinryokuseki"><img src="svg/instagram.svg" alt="instagram" width="50" height="50"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/j9p8eOqLNNDFGAj"><img src="svg/twitter.svg" alt="twitter" width="50" height="50"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-right-pink"></div>
+
+    <!--   tab-->
+    <div id="tab__wrap">
+        <div class="tab__navi">
+            <div id="tab1" class="tab selected">WEBサイト</div>
+            <div id="tab2" class="tab">Bunner</div>
+            <div id="tab3" class="tab">Illust</div>
+        </div>
+
+        <div id="tab__cont">
+
+            <div id="slide" class="">
+                <div id="first" class="tab__unit">
+                    <h2 class="ttl">WEBサイト</h2>
+                    <ul class="product__label">
+                        <li><span>HTML5</span></li>
+                        <li><span>CSS3</span></li>
+                        <li><span>jQuary</span></li>
+                    </ul>
+                    <div class="container product__wrap">
+
+                        <div class="L-cat">
+                            <img src="img/product_01.jpg" alt="製作物のキャプチャ">
+                            <dl class="summary">
+                                <dt>使用ソフト</dt>
+                                <dd>Dreamweaver・braket・photoshop・illustrator</dd>
+                                <dt>制作期間</dt>
+                                <dd>半年間</dd>
+                                <dt>概要</dt>
+                                <dd>クライアントが店のオーナーという想定で空想の飲食店webサイトを制作。配色、文字の読みやすさに気を配りながら制作しました。</dd>
+                            </dl>
+                            <a class="product__btn" href="opsiusdining/index.html" target="_blank">Opusius Diningサイト</a>
+                        </div><!-- L-cat end-->
+
+                        <div class="R-cat">
+                            <img src="img/product_02.jpg" alt="製作物のキャプチャ">
+
+                            <dl class="summary">
+                                <dt>使用ソフト</dt>
+                                <dd>braket・figma・photoshop・illustrator</dd>
+                                <dt>制作期間</dt>
+                                <dd>3か月間</dd>
+
+                                <dt>概要</dt>
+                                <dd>Figmaでモックアップを作成後、当サイトを1から作成しました。</dd>
+                            </dl>
+
+                        </div><!-- R-cat end-->
+                    </div><!-- product__wrap end-->
+                </div><!-- first end-->
+
+                <div id="second" class="tab__unit">
+                    <h2 class="ttl">バナー作成</h2>
+                    <ul class="product__label">
+                        <li><span>photoshop</span></li>
+                    </ul>
+                    <div class="container product__wrap">
+
+                        <!--                        <div class="L-cat" id="slick-wrap">-->
+                        <div class="L-cat slick-wrap">
+                            <!--slick-picturesー-->
+                            <div class="slick-container">
+                                <ul class="slick-pictures">
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic01.jpg" alt="デニム好きの為のコーディネートスナップ"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic02.jpg" alt="リメイクデニムフェア"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic03.jpg" alt="ファッションレポート"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic04.jpg" alt="リネンプロジェクト"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic05.jpg" alt="SummerSALE"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic06.jpg" alt="雨の日はポイント2倍"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic07.jpg" alt="NEWshopオープン"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic08.jpg" alt="シークレットセール"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic09.jpg" alt="WinterSALE"></li>
+                                    <li class="slide-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic10.jpg" alt="ギフトサービス始めました"></li>
+                                </ul>
+
+                                <!--slick-thumbnails-->
+                                <ul class="slick-thumbnails">
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic01.jpg" alt="デニム好きの為のコーディネートスナップ"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic02.jpg" alt="リメイクデニムフェア"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic03.jpg" alt="ファッションレポート"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic04.jpg" alt="リネンプロジェクト"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic05.jpg" alt="SummerSALE"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic06.jpg" alt="雨の日はポイント2倍"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic07.jpg" alt="NEWshopオープン"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic08.jpg" alt="WinterSALE"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic09.jpg"></li>
+                                    <li class="thumbnail-item"><img src="img/index_bunner_slick-pic/bunner_slick-pic10.jpg" alt="ギフトサービス始めました"></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="R-cat">
+                            <dl class="summary">
+                                <dt>制作期間</dt>
+                                <dd>半年間程</dd>
+                                <dt>概要</dt>
+                                <dd>photoshopでレディースアパレル向けのバナーを10枚作成しました。その他バナーも是非ご覧ください。</dd>
+                            </dl>
+                            <a class="product__btn" href="product02.html">他のバナーを見る→</a>
+                        </div>
+                    </div>
+                </div><!-- second end-->
+                <div id="third" class="tab__unit">
+                    <h2 class="ttl">イラスト作成</h2>
+                    <ul class="product__label">
+                        <li><span>illustrator</span></li>
+                    </ul>
+                    <div class="container product__wrap">
+                        <div class="L-cat slick-wrap">
+                            <!--slick-picturesー-->
+                            <div class="slick-container">
+                                <ul class="slick-pictures">
+                                    <li class="slide-item"><img src="img/bike.png" alt="自転車"></li>
+                                    <li class="slide-item"><img src="img/ringo.png" alt="りんご"></li>
+                                </ul>
+
+                                <!--slick-thumbnails-->
+                                <ul class="slick-thumbnails">
+                                    <li class="thumbnail-item"><img src="img/bike.png" alt="自転車"></li>
+                                    <li class="thumbnail-item"><img src="img/ringo.png" alt="りんご"></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="R-cat">
+                            <dl class="summary">
+                                <dt>制作期間</dt>
+                                <dd>1日</dd>
+                                <dt>概要</dt>
+                                <dd>パスファインダーを使用したオブジェクトの切り抜きを行いペンツールを使ってイラストを作成しました。</dd>
+                            </dl>
+                        </div>
+
+
+                    </div>
+                </div><!-- third end-->
+
+            </div>
+        </div>
+    </div><!-- wrap end -->
+
+
+
+
+    <!--   tab end-->
+
+    <section id="skills" class="effect-fade">
+        <div class="wrapper" id="skill__wrap">
+            <h2 class="ttl">SKILL</h2>
+            <div class="container" id="skill__area">
+                <div class="skill__list html__area">
+                    <div class="skill__pict">
+                        <span class="skill-img__wp">
+                            <img src="svg/code.svg" alt="HTML CSS" width="200" height="200">
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="skill__ttl"><em class="strong">HTML・CSS</em></h4>
+                        <p class="skill__txt">実務経験のある方には劣りますがemmetを使った早いコーディングが出来ます。HTMLではコンテンツモデルのルールに従う事はもちろん本来の使い方を無視しないよう文書構造に配慮した書き方を心がけています。CSSではmediaquryを使ったレスポンシブデザインも作成できます。SCSSは独学ではありますがかじった程度の知識は持っています。</p>
+                    </div>
+                </div>
+                <div class="skill__list">
+                    <div class="skill__pict">
+                        <span class="skill-img__wp">
+                            <img src="svg/computer%20graphics.svg" alt="Dreamweaver" width="200" height="200">
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="skill__ttl"><em class="strong">Dreamweaver</em></h4>
+                        <p class="skill__txt">学校ではDreamweaverを使用してHTMLのマークアップ、ページのテンプレート化からの新規作成、ページの調整や各ページの変更を実践的に学びました。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="skill__area">
+                <div class="skill__list">
+                    <div class="skill__pict">
+                        <span class="skill-img__wp">
+                            <img src="svg/bicycle.svg" alt="illuatrator" width="200" height="200">
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="skill__ttl"><em class="strong">illustrator</em></h4>
+                        <p class="skill__txt">ペンツールで描くベジェ曲線を利用してオブジェクトを変形させたり、パスファインダーを使用したイラストの作成が出来ます。</p>
+                    </div>
+
+                </div>
+                <div class="skill__list">
+                    <div class="skill__pict">
+                        <span class="skill-img__wp">
+                            <img src="svg/brush_tip.svg" alt="photoshop" width="200" height="200">
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="skill__ttl"><em class="strong">Photoshop</em></h4>
+                        <p class="skill__txt">画像の使い分けはもちろん、複数のレイヤーを使い切り抜いた画像を色調整しながらキレイに合成する事が出来ます。</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="back-to-top"><img id="back-to-img" src="svg/back-to-arow.svg" alt="TOPへ戻る"><a id="page-top" href="#index-page">TOPへ戻る</a></div>
+    <footer>
+        <nav id="footer__nav">
+            <ul class="f-nav">
+                <li class="f-nav__list"><a class="footer__link" href="product01.html">WEBサイト</a></li>
+                <li class="f-nav__list"><a class="footer__link" href="product02.html">バナー制作</a></li>
+                <li class="f-nav__list">
+                    <div class="content">
+                        <a class="footer__link js-modal__link" href="#">ABOUT ME</a>
+                    </div>
+                    <div class="modalwindow js-modal">
+                        <div class="modal__bg js-modal-close"></div>
+                        <div class="modal__content">
+                            <div class="about__inner">
+                                <div class="about__pic"><img src="img/profile-ph.jpg" alt="写真"></div>
+                                <div class="about__txt">
+                                    <h4><em class="strong">経歴・趣味・強みについて</em></h4>
+                                    <p>アパレルの販売員を約3年間勤務後、事務職に転職しエクセル、パワーポイント、word等のofficeスキルを一通り習得。<br>アパレル販売員の経験ではコミュニケーションを取る事の楽しさを知り人と接する事が好きになりました。<br>
+                                        事務職では主に集計作業をメインに月1回の商品勉強会を行うセミナーの準備、資料作成等の業務を経験。<br>人からはよく天真爛漫な性格だと言われます。能動的に動くこと、探求心を持って仕事が出来る事が私の強みです。<br>
+                                        コラージュが好きでよくphotoshopで様々な合成写真を作っています。</p>
+                                </div>
+                            </div>
+                            <a class="js-modal-close" id="close__btn" href="#">閉じる</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="sns-list">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100003136006689"><img src="svg/facebook.svg" alt="facebook" width="50" height="50"></a></li>
+                <li><a target="_blank" href="http://Instagram.com/kinryokuseki"><img src="svg/instagram.svg" alt="instagram" width="50" height="50"></a></li>
+                <li><a target="_blank" href="https://twitter.com/j9p8eOqLNNDFGAj"><img src="svg/twitter.svg" alt="twitter" width="50" height="50"></a></li>
+            </ul>
+        </nav>
+
+        <div id="copylight" class="footer__color">
+            <small>Copyright © 2020 chika kobayashi All Rights Reserved.</small>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        //slider
+
+        $(function() {
+            var mainSlider = ".slick-pictures"; //メインスライダーid
+            var thumbnailSlider = ".slick-thumbnails"; //サムネイルスライダーid
+
+            $(mainSlider).slick({
+                speed: 1000,
+                arrows: true,
+                asNavFor: thumbnailSlider
+            });
+            $(thumbnailSlider).slick({
+                slidesToShow: 3,
+                speed: 1000,
+                asNavFor: mainSlider,
+                appendArrows: $('#arrows')
+            });
+            //#thumbnail_sliderでクリックしたスライドをカレントにする
+            $(thumbnailSlider + " .slick-slide").on('click', function() {
+                var index = $(this).attr("data-slick-index");
+                $(thumbnailSlider).slick("slickGoTo", index, false);
+            });
+        });
+
+
+        //scrollでtopへ戻るを表示
+
+        $(function() {
+            var topBtn = $('#back-to-top');
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 2000) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+
+        //        tab
+
+        $("#tab1").click(moveToFirst);
+        $("#tab2").click(moveToSecond);
+        $("#tab3").click(moveToThird);
+        $("#tab4").click(moveToFour);
+
+        function moveToFirst() {
+            $("#slide").attr('class', 'move-to-first');
+            $(".tab").attr('class', 'tab');
+            $("#tab1").attr('class', 'tab selected');
+        }
+
+        function moveToSecond() {
+            $("#slide").attr('class', 'move-to-second');
+            $(".tab").attr('class', 'tab');
+            $("#tab2").attr('class', 'tab selected');
+        }
+
+        function moveToThird() {
+            $("#slide").attr('class', 'move-to-third');
+            $(".tab").attr('class', 'tab');
+            $("#tab3").attr('class', 'tab selected');
+        }
+
+        function moveToFour() {
+            $("#slide").attr('class', 'move-to-four');
+            $(".tab").attr('class', 'tab');
+            $("#tab4").attr('class', 'tab selected');
+        }
+
+    </script>
+
+</body>
+
+</html>

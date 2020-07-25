@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="
+                                          中目黒・自由が丘・渋谷に店舗を構えるエスニック料理店です。女子会やパーティ等にご利用下さい。">
+    <meta name="keywords" content="中目黒,自由が丘,渋谷,タイ,マレーシア,ベトナム,dinningbar,女子会,party">
+    <title>menuページ</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <!-- slick.css -->
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <!--    Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- style.css and media-querie.css--->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/media-querie.css" rel="stylesheet" type="text/css">
+    <!--    googlefont-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+
+
+    <!-- 本体 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!--SmoothScrol-->
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+    <!--slick-->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!--jQuery -->
+    <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+
+        $(document).ready(function() {
+            $('.drawer').drawer();
+        });
+    </script>
+</head>
+
+<body id="menu_page" class="drawer drawer--top">
+    <!----枠①------->
+    <div id="wrapper">
+        <header class="open_nav" role="banner">
+            <h1 class="head"><a class="head__shop-logo" href="index.html"><img src="images/shop_logo.png" alt="opsiusdining" width="237" height="122" /></a></h1>
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <!--iphon用のナビ-->
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a href="index.html" title="ホーム">home</a></li>
+                    <li><a href="about.html" title="opusiusdiningについて">about</a> </li>
+                    <li><a href="#menu_page" title="メニュー">menu</a></li>
+                    <li><a href="party-menu.pdf" target="_blank" title="コースメニュー">coursemenu</a></li>
+                    <li><a href="contact.html" title="コンタクト">contact</a></li>
+                </ul>
+                <a href="reservation.html" title="予約" class="headnav_reservation" style="color: #fff; padding: 0px 20px;">予約/reservation</a>
+            </nav>
+        </header>
+        <div id="mainwrap">
+            <!--.globalnavi-->
+            <nav id="globalnavi">
+                <ul class="globalnavi__manu-area">
+                    <li class="gnav__menu-areaList"><a class="dotted-line" href="index.html" title="HOME">home</a></li>
+                    <li class="gnav__menu-areaList"><a class="dotted-line" href="about.html" title="ABOUT">about</a></li>
+                    <li class="gnav__menu-areaList"><a class="dotted-line current" href="#" title="MENU">menu</a></li>
+                    <li class="gnav__menu-areaList"><a class="dotted-line" href="party-menu.pdf" target="_blank" title="coursemenu">coursemenu</a></li>
+                    <li class="gnav__menu-areaList"><a class="dotted-line" href="contact.html" title="CONTACT">contact</a></li>
+                </ul>
+                <div class="btn-book">
+                    <a class="btn-book__reserv" href="reservation.html" title="reservation" style="color: #fff;">予約/reservation</a>
+                </div>
+            </nav>
+            <div id="mainvisual">
+                <h2><img src="images/menu_mainvisual.jpg" width="880" height="498" alt="opsiusdiningについて" /></h2>
+            </div>
+        </div>
+        <!--#shop_nav-->
+        <nav id="shop-nav">
+            <ul class="shop-nav__menu-area">
+                <li class="snav__menu-areaList"><a data-scroll href="#lunch-sec" title="lunchmenu">lunchmenu</a></li>
+                <li class="snav__menu-areaList"><a data-scroll href="#dinner-sec" title="dinnermenu">dinnermenu</a></li>
+                <li class="snav__menu-areaList"><a data-scroll href="#drink-sec" title="drinkmenu">drinkmenu</a></li>
+                <li class="snav__menu-areaList"><a data-scroll href="#" title="partyplan">partyplan</a> </li>
+            </ul>
+        </nav>
+        <section id="lunch-sec" class="menu-sec">
+            <h3 class="mobile-head">Lanch menu
+                <small class="detail_memo">サラダ +ドリンクset<span class="mobile_Lu-price">¥880(税込)</span></small></h3>
+
+
+            <!--モバイルでdisolay:blockにする-->
+            <div class="container" id="Lu__area">
+                <div class="pull-left">
+                    <img class="fried_ph" src="images/fried-rice.jpg" width="430" height="275" alt="焼き飯">
+                </div>
+                <div id="appetizer__area" class="pull-right">
+                    <h3 class="app__Lutitle">Lunch menu<small class="detail_memo">サラダ +ドリンクset</small></h3>
+                    <img class="papa_ph" src="images/papaya-salad.jpg" width="300" height="169" alt="パパイヤサラダ">
+                    <div class="app__item">
+                        <h5 class="app__Luprice">¥880<span class="tax">(税込)</span></h5>
+                        <ul class="listArea" id="app__Listarea">
+                            <li>
+                                <p class="app__memo">サラダは3種類からお選び下さい</p>
+                            </li>
+                            <li class="app__Listitem">ソムタム<span class="memo">（青パパイヤのサラダ）</span></li>
+                            <li class="app__Listitem">オリエンタルサラダ<span class="memo">（ピーナッツソースを和えた甘めのサラダです。）</span></li>
+                            <li class="app__Listitem">ベトナム風生春巻き</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="for-ph__area"></div>
+            <ul class="listArea" id="mobile_app-list">
+                <li>
+                    <p class="app__memo">サラダは3種類からお選び下さい</p>
+                </li>
+                <li class="app__Listitem">ソムタム<span class="memo">（青パパイヤのサラダ）</span></li>
+                <li class="app__Listitem">オリエンタルサラダ<span class="memo">（ピーナッツソースを和えた甘めのサラダです。）</span></li>
+                <li class="app__Listitem">ベトナム風生春巻き</li>
+            </ul>
+            <div class="container" id="main__area">
+                <div id="main__item" class="pull-left">
+                    <h4 class="Ltitle main__title">Main</h4>
+                    <ul class="listArea" id="main__mainList">
+                        <li class="main__Listitem">ナシゴレン
+                            <span class="memo"> ほんのりとした辛味と心地よい甘さがMIXしたインドネシア風チャーハン</span></li>
+                        <li class="main__Listitem">パッタイ
+                            <span class="memo">自家製の生米麺を使用。お好みでレモンをかけてお召し上がりください。</span></li>
+                        <li class="main__Listitem">ベトナムフォー
+                            <span class="memo">鶏肉で出しをとった優しい味わい。</span></li>
+                        <li class="main__Listitem">海老のグリーンカレー
+                            <span class="memo">エビの旨味がカレーに染み込んで更に美味しくなりました。</span></li>
+                        <li class="main__Listitem">牛肉のガパオ炒めご飯
+                            <span class="memo">バジル香るタイの定番料理</span></li>
+                        <li class="rice_memo">※ジャスミンライス、玄米、白米の中からお好きなライスをお選び下さい。</li>
+                    </ul>
+                </div>
+                <div id="pad-ph__area" class="pull-right slick-box2">
+                    <figure><img src="images/pad-thai.jpg" width="430" height="295" alt="パッタイ"></figure>
+                    <figure><img src="images/beverage.jpg" width="430" height="295" alt="ライムジュース"></figure>
+                </div>
+            </div>
+        </section>
+        <section id="dinner-sec" class="menu-sec">
+            <h3 class="dinner__title">Dinner menu</h3>
+            <div class="container di__group">
+                <div id="salada__item" class="pull-left">
+                    <h4 class="Ltitle">Salad
+                        <small class="detail_memo">サラダ</small></h4>
+                    <ul class="listArea dinner__area">
+                        <li class="dinner__Listitem">ベトナム生春巻き <span class="price">¥480</span></li>
+                        <li class="dinner__Listitem">ソムタム<span class="price">¥600</span></li>
+                        <li class="dinner__Listitem">ポメロサラダ<span class="price">¥580</span></li>
+                        <li class="dinner__Listitem">ヤムウンセン<span class="price">¥580</span></li>
+                        <li class="dinner__Listitem">海老とアボガドの空芯菜サラダ<span class="price">¥680</span></li>
+                        <li class="dinner__Listitem">パクチーサラダ<span class="price">¥400</span></li>
+                        <li class="dinner__Listitem">大根と人参のスパイシーサラダ<span class="price">¥580</span></li>
+                    </ul>
+                </div>
+                <div id="grill-loast__item" class="pull-right">
+                    <h4 class="Rtitle">Gril&amp;Roast
+                        <small class="detail_memo">揚げ物</small></h4>
+                    <ul class="listArea dinner__area">
+                        <li class="dinner__Listitem">手羽先のスパイシー揚げ<span class="price">¥700</span></li>
+                        <li class="dinner__Listitem">若鶏のソテーチキン<span class="price">¥600</span></li>
+                        <li class="dinner__Listitem">海老のすり身揚げ<span class="price">¥600</span></li>
+                        <li class="dinner__Listitem">揚げ春巻き<span class="price">¥550</span></li>
+                        <li class="dinner__Listitem">鶏肉の黒ゴマソース和え<span class="price">¥550</span></li>
+                        <li class="dinner__Listitem">海老のガーリック炒めトースト<span class="price">¥500</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--     container終わり-->
+            <div class="container di__group">
+                <div id="tomyum-ph__area" class="pull-left slick-box3">
+                    <figure><img src="images/tom-yum-kung.jpg" width="430" height="295" alt="トムヤムクン"></figure>
+                    <figure><img src="images/thai_food.jpg" width="430" height="295" alt="チキン"></figure>
+                    <figure><img src="images/thai_green_curry.jpg" width="430" height="295" alt="グリーンカレー"></figure>
+                </div>
+                <div id="soup-noodle__item" class="pull-right">
+                    <h4 class="Rtitle">Soup&amp;Noodle
+                        <small class="detail_memo">スープ＆麺</small></h4>
+                    <ul class="listArea dinner__area">
+                        <li class="dinner__Listitem">トムヤムクン<span class="price">¥1000</span></li>
+                        <li class="dinner__Listitem">ベトナムフォー<span class="price">¥900</span></li>
+                        <li class="dinner__Listitem">トムカーガイ<span class="price">¥850</span></li>
+                        <li class="dinner__Listitem">海鮮焼きビーフン<span class="price">¥950</span></li>
+                        <li class="dinner__Listitem">石焼あんかけやきそば<span class="price">¥950</span></li>
+                        <li class="dinner__Listitem">ミーゴレン<span class="price">¥900</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--     container終わり-->
+            <div class="container di__group">
+                <div id="Frid-food__item" class="pull-left">
+                    <h4 class="Ltitle">Frid food
+                        <small class="detail_memo">炒め物</small></h4>
+                    <ul class="listArea dinner__area">
+                        <li class="dinner__Listitem">魚とチャイニーズセロリの炒め物<span class="price">¥800</span></li>
+                        <li class="dinner__Listitem">鶏肉と空芯菜炒め<span class="price">¥750</span></li>
+                        <li class="dinner__Listitem">鶏肉とカシューナッツ炒め<span class="price">¥750</span></li>
+                        <li class="dinner__Listitem">海老と野菜のバジル炒め<span class="price">¥800</span></li>
+                        <li class="dinner__Listitem">タイ風チンジャオロース<span class="price">¥750</span></li>
+                    </ul>
+                </div>
+                <div id="rice__item" class="pull-right">
+                    <h4 class="Rtitle">Rice
+                        <small class="detail_memo">ご飯</small></h4>
+                    <ul class="listArea dinner__area">
+                        <li class="dinner__Listitem">牛肉のガパオ炒めご飯<span class="price">¥900</span></li>
+                        <li class="dinner__Listitem">グリーンカレー<span class="price">¥850</span></li>
+                        <li class="dinner__Listitem">レッドカレー<span class="price">¥850</span></li>
+                        <li class="dinner__Listitem">ローストチキンのイエローカレー<span class="price">¥850</span></li>
+                        <li class="dinner__Listitem">ナシゴレン<span class="price">¥900</span></li>
+                        <li class="dinner__Listitem">野菜と海老のあんかけチャーハン<span class="price">¥950</span></li>
+                        <li class="dinner__Listitem">カオマンガイ<span class="price">¥900</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--     container終わり-->
+            <div class="container di__group">
+                <div class="option__area">
+                    <h6 class="option__title">Topping</h6>
+                    <ul class="option__List">
+                        <li class="option__Listitem">半熟卵<span class="option__price">¥150</span></li>
+                        <li class="option__Listitem">アボガド<span class="option__price">¥200</span></li>
+                        <li class="option__Listitem">シーフード<span class="option__price">¥300</span></li>
+                        <li class="option__Listitem">キヌア<span class="option__price">¥200</span></li>
+                        <li class="option__Listitem">チーズ<span class="option__price">¥150</span></li>
+                    </ul>
+                </div>
+
+                <div class="option__area">
+                    <h6 class="option__title">rice</h6>
+                    <ul class="option__List">
+                        <li class="option__Listitem">お米<span class="option__price">¥250</span></li>
+                        <li class="option__Listitem">もち米<span class="option__price">¥400</span></li>
+                        <li class="option__Listitem">タイ米<span class="option__price">¥400</span></li>
+                        <li class="option__Listitem">五穀米<span class="option__price">¥500</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container di__group">
+                <h4 class="mobile-head">Dessert<small class="detail_memo">デザート</small></h4>
+
+                <div id="ice-ph__area" class="pull-left">
+                    <img src="images/bowl.jpg" width="430" height="295" alt="アイス">
+                </div>
+                <div id="dessert__item" class="pull-right">
+                    <h4 class="Rtitle pc-head">Dessert<small class="detail_memo">デザート</small></h4>
+                    <ul class="listArea dinner__area">
+                        <li class="dinner__Listitem">パンケーキのココナッツアイス添え<span class="price">¥650</span></li>
+                        <li class="dinner__Listitem">マンゴープリンのイチゴ添え<span class="price"> ¥550</span></li>
+                        <li class="dinner__Listitem">タピオカとココナッツミルクのプリン<span class="price">¥600</span></li>
+                        <li class="dinner__Listitem">杏仁豆腐<span class="price">¥500</span></li>
+                        <li class="dinner__Listitem">アイス各種<span class="price">¥500</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="drink-sec" class="menu-sec">
+            <h3 class="dinner__title">Drink</h3>
+            <div class="container di__group">
+                <div id="Beer__item" class="pull-left">
+                    <h4 class="Ltitle">Beer<small class="detail_memo">生ビール</small></h4>
+                    <div class="menu-list__inner">
+                        <div class="sub-ph singha-ph">
+                            <ul class="listArea drink__List">
+                                <li class="drink__Listitem">生ビール（キリンハートランド<span class="price">¥500</span></li>
+                                <li class="drink__Listitem">シンハービール（タイ）<span class="price">¥700</span></li>
+                                <li class="drink__Listitem">チャンビール（タイ）<span class="price">¥700</span></li>
+                                <li class="drink__Listitem">コロナ（メキシコ）<span class="price">¥700</span></li>
+                                <li class="drink__Listitem">タイガー（シンガポール）<span class="price">¥700</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="cooktail__item" class="pull-right">
+                    <h4 class="Rtitle">Cooktail<small class="detail_memo">カクテル</small></h4>
+                    <div class="menu-list__inner">
+                        <div class="sub-ph cocktail-ph">
+                            <ul class="listArea drink__List">
+                                <li class="drink__Listitem">モヒート<span class="price">¥680</span></li>
+                                <li class="drink__Listitem">ピナコラーダ<span class="price">¥750</span></li>
+                                <li class="drink__Listitem">フルーツパンチ<span class="price">¥750</span></li>
+                                <li class="drink__Listitem">マンゴービール<span class="price">¥600</span></li>
+                                <li class="drink__Listitem">パインビール<span class="price">¥600</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container di__group">
+                <div id="wine__item" class="pull-left">
+                    <h4 class="Ltitle">Wine<small class="detail_memo">ワイン</small></h4>
+                    <div class="menu-list__inner">
+                        <div class="sub-ph wine-ph">
+                            <ul class="listArea drink__List">
+                                <li class="drink__Listitem">グラスワイン（赤・白）<span class="price">¥600</span></li>
+                                <li class="drink__Listitem">ボトルワイン（赤白）<span class="price">¥2500～</span></li>
+                                <li class="drink__Listitem">スパークリンググラス<span class="price">¥700</span></li>
+                                <li class="drink__Listitem">スパークリングボトル<span class="price">¥3000～</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <h4 class="Rtitle">Other Cooktail<small class="detail_memo">その他カクテル</small></h4>
+                    <div class="other__area sub-ph whiskey-ph drink__List">
+                        <div class="other__item">
+                            <ul class="listArea other__List">
+                                <li class="drink__Listitem">カクテル　各種<span class="price">¥600～</span></li>
+                            </ul>
+                        </div>
+                        <h4 class="Rtitle">Whiskey<small class="detail_memo">ウィスキー</small></h4>
+                        <div id="centerWrap">
+                            <div class="other__item">
+                                <ul class="listArea other__List">
+                                    <li class="drink__Listitem">ウィスキー　各種<span class="price">¥600～</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container di__group">
+                <div id="cafe__item" class="pull-left">
+                    <h4 class="Ltitle">Cafe<small class="detail_memo">コーヒー</small></h4>
+                    <div class="menu-list__inner">
+                        <div class="sub-ph coffe-ph">
+                            <ul class="listArea drink__List">
+                                <li class="drink__Listitem">コーヒー（アイスホット）<span class="price">\400</span></li>
+                                <li class="drink__Listitem">エスプレッソ<span class="price">¥400</span></li>
+                                <li class="drink__Listitem">カフェラテ<span class="price">¥500</span></li>
+                                <li class="drink__Listitem">カフェモカ<span class="price">¥550</span></li>
+                                <li class="drink__Listitem">タピオカミルクティー<span class="price">¥700</span></li>
+                                <li class="drink__Listitem">ジャスミンティー<span class="price">¥450</span></li>
+                                <li class="drink__Listitem">ハイビスカスティー<span class="price">¥600</span>
+                                </li>
+                                <li class="drink_memo">※アイスor ホットでお選び下さい。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="softdrink__item" class="pull-right">
+                    <h4 class="Rtitle">Soft Drink<small class="detail_memo">ソフトドリンク</small></h4>
+                    <div class="menu-list__inner">
+                        <div class="sub-ph mangolassie-ph">
+                            <ul class="listArea drink__List">
+                                <li class="drink__Listitem">マンゴーラッシー</li>
+                                <li class="drink__Listitem">ココナッツラッシー</li>
+                                <li class="drink__Listitem">ベリーミックスラッシー<span class="price">ALL￥700～</span></li>
+                                <li class="drink_memo">※全てタピオカ入りです。</li>
+                                <li>その他ソフトドリンク各種<span class="price">￥500～</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="footer_contents">
+            <div class="footarea">
+                <div class="left_box">
+                    <a data-scroll href="#menu_page" class="page_top_btn"><span>page top</span></a>
+                </div>
+            </div>
+
+            <div class="footarea">
+                <div class="next_box tocontact">
+                    <a href="contact.html" class="next_page_btn"><span>contact</span></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <nav id="foot_nav">
+                <ul>
+                    <li><a href="index.html" title="HOME">home</a></li>
+                    <li><a href="about.html" title="ABOUT">about</a></li>
+                    <li><a href="#menu_page" title="MENU">menu</a> </li>
+                    <li><a href="contact.html" title="CONTACT">contact</a> </li>
+                </ul>
+            </nav>
+            <small class="copyright">COPYRIGHT &copy; opsius,INC. 2018</small>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            $('.slick-box2,.slick-box3').slick({
+                prevArrow: '<div class="slide-arrow prev-arrow"><span class="L-arrow"></span></div>',
+                nextArrow: '<div class="slide-arrow next-arrow"><span class="R-arrow"></span></div>',
+                dots: true,
+                draggable: true,
+                swipe: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+
+    </script>
+</body>
+
+</html>

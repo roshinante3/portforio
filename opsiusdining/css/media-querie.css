@@ -1,0 +1,767 @@
+/***********1024px以上の時(1024px含む)*****************/
+@media (min-width: 1024px) {
+    .hidden__box {
+        margin: 0 6rem 1rem 0;
+        width: 50%;
+    }
+}
+
+/*************1024px以下の時(1024px含む)*****************/
+@media (max-width: 1024px) {
+
+    .app__Listitem,
+    .main__Listitem,
+    .dinner__Listitem {
+        padding-left: 0;
+    }
+
+    .menu-sec {
+        width: 100%;
+    }
+
+    #for-ph__area {
+        visibility: hidden;
+    }
+
+    /*resurve start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    #reservation_page #wrapper {
+        width: 80%;
+    }
+
+    .required {
+        width: 30%;
+        line-height: 2;
+    }
+
+    .table__head {
+        text-align: left;
+    }
+
+    /*resurve end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+}
+
+/***********769px以上の時(769px含む)********************/
+
+@media (min-width: 769px) {
+    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*ヘッダー*/
+    .drawer--top .drawer-hamburger,
+    .drawer--top.drawer-open .drawer-hamburger {
+        display: none;
+    }
+
+    /*ニュース*/
+    .bf {
+        position: relative;
+        padding-top: 7rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bf::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../images/titlle_img_01.png) no-repeat;
+        background-position: center bottom;
+        width: 100%;
+        height: 100%;
+    }
+
+    .food-menu__txt {
+        height: 130px;
+        padding-bottom: 10px;
+    }
+
+    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*menupage start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    .dinner__area {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*menupage end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+}
+
+/*******************768px以可の時***********************/
+@media (max-width: 768px) {
+
+    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    .drawer--top .drawer-hamburger,
+    .drawer--top.drawer-open .drawer-hamburger {
+        right: 5% !important;
+        top: 1% !important;
+    }
+
+    #index_page .L-arrow,
+    #index_page .R-arrow {
+        display: none;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+
+    /*ヘッダー*/
+    #globalnavi {
+        display: none;
+    }
+
+    /*    h1*/
+
+    .head__shop-logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .head {
+        padding: 1.8rem 0 1rem 5%;
+        margin: 0;
+        width: 20%;
+    }
+
+
+    header,
+    .open_nav {
+        width: 100%;
+    }
+
+    .shop-nav__menu-area {
+        width: 100%;
+        padding: 0;
+    }
+
+    .drawer--top .drawer-nav {
+        padding: 20px 0;
+    }
+
+    .drawer-menu li,
+    .headnav_reservation {
+        text-align: center;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .drawer-menu li a {
+        font-size: 1.4rem;
+        color: #060606;
+        text-transform: uppercase;
+        display: block;
+        padding: 10px;
+    }
+
+    .headnav_reservation {
+        width: 150px;
+    }
+
+    /*ニュース*/
+    .news__announce::before {
+        display: none;
+    }
+
+    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*menupage start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    #menu_page .container {
+        padding-top: 15rem;
+    }
+
+    #menu_page .pull-right,
+    #menu_page .pull-left {
+        overflow: visible;
+    }
+
+    #lunch-sec {
+        margin-top: 10rem;
+    }
+
+    #menu_page .container.di__group {
+        margin-top: -15rem;
+    }
+
+    .fried_ph {
+        width: 50%;
+    }
+
+    .papa_ph {
+        top: -15rem;
+        width: 50%;
+    }
+
+    .app__Lutitle {
+        position: absolute;
+        top: -15rem;
+        left: 0;
+        width: 100%;
+    }
+
+    .app__item {
+        position: relative;
+        padding-left: 0;
+    }
+
+    .app__Luprice {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding-top: 0;
+        margin-top: -5rem;
+        text-align: right;
+    }
+
+    #app__Listarea {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding-top: 0;
+        margin-top: 0;
+        text-align: right;
+    }
+
+    #appetizer__area {
+        position: relative;
+    }
+
+    #main__mainList {
+        width: 100%;
+    }
+
+    .option__area:nth-child(1) {
+        margin-right: 0;
+    }
+
+    /*menupage end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*resurve start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    #reservation_page #wrapper {
+        width: 90%;
+    }
+
+    /*resurve end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*access start 768☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    .shop-access__area {
+        margin: 0;
+    }
+
+
+    /*access end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+}
+
+/* ---------------414px以上の時------------------- */
+
+@media screen and (min-width: 414px) {
+
+    #mobile_app-list,
+    .mobile-head {
+        display: none;
+    }
+
+    .menu-list__inner {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+/* ---------------414px以下の時------------------- */
+
+@media (max-width: 414px) {
+    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*common*/
+    h3 {
+        margin-top: -20px;
+        margin-bottom: 0;
+    }
+
+    h5 {
+        margin-top: 1rem;
+    }
+
+    .bf::before {
+        background-size: 100% auto;
+    }
+
+    .bf {
+        margin-bottom: 10px;
+    }
+
+    .app__Lutitle,
+    .app__Luprice,
+    #app__Listarea,
+    .side-img,
+    .pc-head,
+    .pc-veg-ph__area,
+    .pc-mo-ph__area {
+        display: none;
+    }
+
+    div#news .container,
+    #food-menu .container,
+    #about_page .container,
+    #menu_page .container,
+    #party-plan .container,
+    .accessList__area .container,
+    .flex_group,
+    #foot_nav {
+        display: block;
+    }
+
+    .food-menu__area,
+    .course-plan__area,
+    .accessList__ph,
+    .accessList__address,
+    #foot_nav ul li,
+    .news__announce,
+    .news__otherInfo,
+    #shopOrigin__area,
+    #shopDisc__area,
+    .flex_item,
+    #main__item,
+    .pull-right,
+    .pull-left,
+    #mobile_app-list,
+    .other__List {
+        width: 100%;
+    }
+
+    .next_page_btn,
+    .page_top_btn {
+        border: none;
+    }
+
+    /*nav*/
+    .shop-nav__menu-area {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*access start 414☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    .shop-access__area {
+        display: block;
+    }
+
+    .access-nav {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .shop-access__area {
+        /*        margin: 0;*/
+    }
+
+    .shop-access__inner {
+        padding-right: 0;
+    }
+
+    .shop-store {
+        margin-bottom: 1rem;
+    }
+
+    .store-disc,
+    .shop-access__detail,
+    .shop-access__detail dt,
+    .shop-access__detail dd {
+        width: 100%;
+    }
+
+    .store-disc::before,
+    .store-disc::after {
+        height: calc(100vw * 0.1);
+    }
+
+    .shop-access__detail dt,
+    .shop-access__detail dd {
+        float: none;
+    }
+
+    .shop-access__detail dd {
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .shop-access__detail dt {
+        padding-bottom: 0;
+    }
+
+    .iframe-wraper {
+        border: 1px solid #DBB353;
+    }
+
+    /*access end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+
+    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    .snav__menu-areaList {
+        width: 50%;
+    }
+
+    /*news*/
+    #news_contants {
+        margin-top: 2rem;
+    }
+
+    .more {
+        float: none;
+        text-align: center;
+        display: block;
+    }
+
+    /*info*/
+    .info__caption {
+        border: none;
+        font-size: 2rem;
+    }
+
+    .caption__title {
+        font-size: 100%;
+    }
+
+    .caption__txt {
+        font-size: 60%;
+    }
+
+    .unit {
+        padding-top: 15%;
+        width: 50%;
+        margin-bottom: 1.5rem;
+        background-size: 70% auto;
+        background-position: top center;
+    }
+
+    .unit__title {
+        font-size: 1.4rem;
+    }
+
+    .unit__txt {
+        font-size: 1.2rem;
+    }
+
+    .unit__wrap {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    /*foodmenu*/
+    .food-menu__txt,
+    .menu__select {
+        margin-bottom: 20px;
+    }
+
+    .accessList__address img {
+        margin-top: 10px;
+    }
+
+    #foot_nav ul li a {
+        text-align: center;
+    }
+
+    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*about start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    #about_page h3 {
+        padding: 5rem 0 2rem;
+    }
+
+    #about_page h3 .aboutme {
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    .sub-image {
+        background-position: 10% 10%, 100% 100%;
+        width: 100%;
+        height: 0;
+        padding-top: 30%;
+        background-size: 10rem;
+    }
+
+    .sub-image::after {
+        top: 0;
+        background-position: 90% 0;
+        background-size: 15rem;
+        width: 100%;
+        height: 0;
+        padding-top: 30%;
+    }
+
+    #about_page .about-sec {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #co-ph {
+        visibility: hidden;
+        height: 100px;
+    }
+
+    .mo-ph__area {
+        background: url(../images/mortar.jpg)no-repeat;
+    }
+
+    .veg-ph__area {
+        background: url(../images/vegetables.jpg)no-repeat;
+    }
+
+    .co-ph__area {
+        background: url(../images/Cooking.jpg)no-repeat;
+    }
+
+    .sub-ph__area {
+        background-size: contain;
+        padding: 0;
+        background-attachment: fixed;
+        opacity: 0.7;
+        height: 100px;
+    }
+
+    .about__txt p {
+        padding: 3rem 1rem;
+    }
+
+    /*about end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    /*menupage start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    #menu_page .container {
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    #mobile_app-list {
+        text-align: center;
+    }
+
+    /*common終わり*/
+
+    #menu_page .container {
+        padding-top: 5rem;
+    }
+
+    #menu_page .container.di__group {
+        margin-top: -5rem;
+    }
+
+    .fried_ph {
+        left: 0;
+        width: 100%;
+    }
+
+    .mobile_Lu-price {
+        padding-left: 2rem;
+    }
+
+    #mobile_app-list {
+        padding-top: 10%;
+    }
+
+    .app__memo {
+        padding-bottom: 5%;
+    }
+
+    .fried_ph {
+        opacity: 10;
+    }
+
+    #pad-ph__area {
+        padding-bottom: 0;
+    }
+
+    .papa_ph {
+        display: none;
+    }
+
+    #main__area {
+        padding-top: 20%;
+    }
+
+    .main__Listitem {
+        padding-left: 1rem;
+    }
+
+    .pull-right {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    .rice_memo {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .Ltitle,
+    .Rtitle {
+        padding-bottom: 5%;
+    }
+
+    .option__area:nth-child(2) {
+        margin-left: 0;
+        margin-top: 20%;
+    }
+
+    .option__area {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        padding: 0 2rem 2rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .option__price {
+        width: 25%;
+    }
+
+    .listArea.dinner__area {
+        padding-top: 2rem;
+    }
+
+    .drink__Listitem {
+        padding-left: 0;
+    }
+
+
+    .drink__List,
+    .other__List,
+    .Rtitle,
+    .drink_memo {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    /*menupage end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+
+    /*resurve start ☆☆☆☆☆☆☆☆☆☆☆☆*/
+
+    table,
+    tbody,
+    tr,
+    th,
+    td,
+    caption {
+        display: block;
+    }
+
+    #reservation_page #wrapper {
+        width: 100%;
+    }
+
+    #explain__head::before,
+    #explain__head::after {
+        width: 55px;
+    }
+
+    #explain__head::before {
+        left: -60px;
+    }
+
+    #explain__head::after {
+        right: -60px;
+    }
+
+    .explain__Message {
+        padding-left: 0;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .reserv__telList {
+        width: 40%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: 2rem;
+        padding-left: 0.5rem;
+    }
+
+    .reserv__telList:first-child {
+        margin-left: 2rem
+    }
+
+    .reserv__telList::before {
+        width: 5px;
+    }
+
+    .shop-name {
+        font-size: 1.3rem;
+    }
+
+    .Store-name,
+    .reserv__tellnumber {
+        font-size: 1rem;
+    }
+
+    .table__head {
+        height: auto;
+        padding: 1rem 0 1rem 2rem;
+        line-height: 4rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #f8f8f8;
+        width: auto;
+    }
+
+    .required {
+        width: 10%;
+        padding: 0;
+    }
+
+    .table__date {
+        padding: 2rem;
+    }
+
+    .hidden__box {
+        margin: 0 1rem 1rem 0;
+        width: 50%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .hidden__box:nth-child(even) {
+        padding-left: 1rem;
+    }
+
+    .toggle-radio-label {
+        font-size: 1.4rem;
+        display: block;
+    }
+
+    .course__price {
+        float: left;
+        padding-left: 0;
+        text-indent: 2rem;
+    }
+
+    select#shoplist,
+    input,
+    select,
+    textarea {
+        font-size: 80%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    .attention {
+        padding: 0 2rem;
+    }
+
+    button#Confirmation {
+        width: 30%;
+    }
+
+    /*resurve end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+}
