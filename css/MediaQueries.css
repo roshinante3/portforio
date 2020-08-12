@@ -69,7 +69,7 @@
 
     .modal__content {
         width: 100%;
-        padding: 20px;
+        padding: 40px 20px;
     }
 
     .container {
@@ -101,6 +101,11 @@
 
     .profile__inner+.sns-list {
         margin: 0 auto;
+    }
+
+    .about__pic img {
+        width: 200px;
+    height: 200px;
     }
 
     .profile__wrap>.L-inner.T-inner {
