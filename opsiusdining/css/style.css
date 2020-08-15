@@ -621,7 +621,7 @@ dl {
 
 .course-plan__desc {
     padding: 0 2rem 2rem;
-    word-break: keep-all;
+    /*word-break: keep-all;*/
 }
 
 .select-plan__area {
@@ -929,6 +929,50 @@ footer {
     width: 90%;
     height: 100%;
 }
+
+
+.sub-ph__area {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin-bottom: 10%;
+}
+
+.about__txt {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2% 0;
+}
+
+.about__txt.R-txt {
+    margin-left: auto;
+}
+
+.txt-inner {
+    padding: 2%;
+    width: 60%;
+}
+
+.txt-inner p {
+    border: 1px solid #dbb353;
+    padding: 2%;
+}
+
+.mo-ph__area {
+    background: url(../images/mortar.jpg) no-repeat 100% 0 / contain;
+}
+
+.food-ph__area {
+    background: url(../images/food.jpg)no-repeat 0 0 / contain;
+}
+
+.veg-ph__area {
+        background: url(../images/vegetables.jpg)no-repeat 100% 0 / contain;
+    }
+
 
 /******aboutpage終わり********/
 /******menupage*****::::::***/
@@ -1517,7 +1561,7 @@ caption {
     transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-.toggle-radio:checked + .toggle-radio-label:after {
+.toggle-radio:checked+.toggle-radio-label:after {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -1561,7 +1605,7 @@ caption {
     text-align: center;
 }
 
-.hidden__box input:checked ~ .hidden__show {
+.hidden__box input:checked~.hidden__show {
     padding: 10px 0;
     height: auto;
     opacity: 1;
@@ -1623,7 +1667,7 @@ textarea:focus {
     -moz-appearance: none;
     appearance: none;
     position: relative;
-    width: 30%;
+    width: 100%;
 }
 
 .pull-label {
