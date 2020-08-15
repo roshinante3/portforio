@@ -88,6 +88,14 @@
         width: auto;
     }
 
+    ul.h-nav.nav__area {
+    display: none;
+}
+
+.drawer-menu {
+    display: inherit;
+}
+
     #profile::before {
         /* width: calc(100% - 50%); */
         height: 100px;
