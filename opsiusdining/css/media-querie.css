@@ -297,9 +297,7 @@
     .app__Luprice,
     #app__Listarea,
     .side-img,
-    .pc-head,
-    .pc-veg-ph__area,
-    .pc-mo-ph__area {
+    .pc-head {
         display: none;
     }
 
@@ -500,33 +498,12 @@
         padding-bottom: 0;
     }
 
-    #co-ph {
-        visibility: hidden;
-        height: 100px;
-    }
-
-    .mo-ph__area {
-        background: url(../images/mortar.jpg)no-repeat;
-    }
-
-    .veg-ph__area {
-        background: url(../images/vegetables.jpg)no-repeat;
-    }
-
-    .co-ph__area {
-        background: url(../images/Cooking.jpg)no-repeat;
-    }
-
     .sub-ph__area {
-        background-size: contain;
-        padding: 0;
-        background-attachment: fixed;
-        opacity: 0.7;
-        height: 100px;
+        display: block;
     }
 
-    .about__txt p {
-        padding: 3rem 1rem;
+    .txt-inner {
+        width: auto;
     }
 
     /*about end ☆☆☆☆☆☆☆☆☆☆☆☆*/
