@@ -111,6 +111,10 @@
         margin: 0 auto;
     }
 
+    .modal__content span.close {
+        right: 5%;
+    }
+
     .about__pic img {
         width: 200px;
     height: 200px;
