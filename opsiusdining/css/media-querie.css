@@ -500,15 +500,30 @@
 
     #about_page .about-sec {
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding: 0;
     }
 
     .sub-ph__area {
         display: block;
+        height: calc(90vw * 0.6);
+        margin-bottom: 50%;
+    }
+
+    .mo-ph__area,
+    .veg-ph__area,
+    .food-ph__area {
+        background-size: cover;
     }
 
     .txt-inner {
-        width: auto;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50%;
+        background-color: transparent;
+    }
+
+    .txt-inner>p {
+        background: rgba(255, 255, 255, 0.4);
     }
 
     /*about end ☆☆☆☆☆☆☆☆☆☆☆☆*/
