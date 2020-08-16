@@ -729,7 +729,7 @@ dl {
 .footarea:before {
     content: "";
     display: block;
-    padding-top: 55%;
+    padding-top: 50%;
 }
 
 /* ------leftbox------- */
