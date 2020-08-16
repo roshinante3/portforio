@@ -799,7 +799,7 @@ dl {
 .page_top_btn {
     color: #fff;
     display: block;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -809,19 +809,20 @@ dl {
     margin: 0;
     text-align: center;
     letter-spacing: 1px;
-    font-size: 1.3rem;
-    padding: 20px;
-    width: 20%;
+    font-size: 1.5rem;
+    padding: 17% 0;
+    width: 80%;
     min-width: 50px;
+    text-transform: capitalize;
 }
 
 /* --------------フッタ-------------------- */
 
 
 footer {
-    padding-top: 20px;
-    background: #4e4d4c;
-    border-top: 1px dotted #fff;
+    padding: 10% 0;
+    background: #f8f8f8;
+    border-top: 1px dotted #dbb353;
     text-align: center;
 }
 
@@ -864,8 +865,7 @@ footer {
 
 .copyright {
     font-size: 1.2rem;
-    color: #fff;
-    padding-bottom: 20px;
+    color: #bcb09f;
 }
 
 /******aboutpage********/
@@ -1279,7 +1279,9 @@ span.price {
 
 /******contactpage********/
 
-
+section#jiyugaoka-store {
+    margin-bottom: 100px;
+}
 
 .shop-access__area {
     margin: 0 2rem;
