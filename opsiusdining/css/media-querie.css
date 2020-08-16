@@ -332,7 +332,12 @@
 
     .next_page_btn,
     .page_top_btn {
-        border: none;
+        padding: 10% 0;
+    }
+
+    #footer_contents {
+        width: 80%;
+        margin: 100px auto -37px;
     }
 
     /*nav*/
