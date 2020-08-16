@@ -485,6 +485,62 @@ h1.header__txt {
 
 }
 
+/*icon*/
+span.close-icon {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    z-index: 6;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+span.close-icon > i, span.close-icon > i::before, span.close-icon > i::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #bd8966;
+    border-radius: 8px;
+}
+
+span.close-icon > i {
+    background-color: transparent;
+}
+
+.modal__content span.close {
+    display: block;
+    position: absolute;
+    right: 2%;
+    color: #bd8966;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    -webkit-transform: translateY(24px);
+    -moz-transform: translateY(24px);
+    -ms-transform: translateY(24px);
+    -o-transform: translateY(24px);
+    transform: translateY(24px);
+}
+
+
+.close-icon > i::before, span.close-icon > i::after {
+    content: '';
+    
+}
+
+.close-icon > i::before {
+    transform: translate(-50%, -50%) rotate(315deg);
+}
+
+.close-icon > i::after {
+    transform: translate(-50%, -50%) rotate(-315deg);
+}
+
+
 /******* modalwindow end*******/
 
 /******* tab__wrap *******/
