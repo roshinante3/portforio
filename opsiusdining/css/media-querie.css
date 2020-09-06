@@ -19,13 +19,7 @@
         width: 100%;
     }
 
-    #for-ph__area {
-        visibility: hidden;
-    }
-
-    /*resurve start ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    #reservation_page #wrapper {
+    #reservation_page .wrapper {
         width: 80%;
     }
 
@@ -37,39 +31,15 @@
     .table__head {
         text-align: left;
     }
-
-    /*resurve end ☆☆☆☆☆☆☆☆☆☆☆☆*/
 }
 
 /***********769px以上の時(769px含む)********************/
 
 @media (min-width: 769px) {
-    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
 
-    /*ヘッダー*/
     .drawer--top .drawer-hamburger,
     .drawer--top.drawer-open .drawer-hamburger {
         display: none;
-    }
-
-    /*ニュース*/
-    .bf {
-        position: relative;
-        padding-top: 7rem;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .bf::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: url(../images/titlle_img_01.png) no-repeat;
-        background-position: center bottom;
-        width: 100%;
-        height: 100%;
     }
 
     .food-menu__txt {
@@ -77,25 +47,27 @@
         padding-bottom: 10px;
     }
 
-    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    /*menupage start ☆☆☆☆☆☆☆☆☆☆☆☆*/
-    .dinner__area {
-        width: 80%;
+    h1#top-logo {
         margin: 0 auto;
     }
 
-    /*menupage end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    .listArea {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /*******************768px以可の時***********************/
 @media (max-width: 768px) {
 
-    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
     .drawer--top .drawer-hamburger,
     .drawer--top.drawer-open .drawer-hamburger {
         right: 5% !important;
-        top: 1% !important;
+        top: 2% !important;
+    }
+
+    .drawer-hamburger {
+        padding: 2% 0 !important;
     }
 
     #index_page .L-arrow,
@@ -103,32 +75,49 @@
         display: none;
     }
 
-    #wrapper {
+    .wrap {
         width: 100%;
     }
 
-    /*ヘッダー*/
+    .wrapper_inner {
+        padding: 0 5%;
+    }
+
     #globalnavi {
         display: none;
     }
-
-    /*    h1*/
 
     .head__shop-logo {
         margin: 0;
         padding: 0;
     }
 
-    .head {
-        padding: 1.8rem 0 1rem 5%;
-        margin: 0;
-        width: 20%;
+    a.head__shop-logo>img {
+        width: 50%;
     }
 
+    h1.head {
+        margin-left: 2%;
+    }
 
-    header,
-    .open_nav {
+    header.open_nav {
         width: 100%;
+    }
+
+    /*    .btn__wrap {
+        margin: 0 2% 0 auto;
+    }*/
+
+    .btn__wrap {
+        display: none;
+    }
+
+    #survis__contants::before {
+        margin: 7% 0 0 auto;
+    }
+
+    #menu___contants.shadow_box {
+        margin-top: 4%;
     }
 
     .shop-nav__menu-area {
@@ -159,69 +148,9 @@
         width: 150px;
     }
 
-    /*ニュース*/
-    .news__announce::before {
-        display: none;
-    }
-
-    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    /*menupage start ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    #menu_page .container {
-        padding-top: 15rem;
-    }
-
-    #menu_page .pull-right,
-    #menu_page .pull-left {
-        overflow: visible;
-    }
-
-    #lunch-sec {
-        margin-top: 10rem;
-    }
-
-    #menu_page .container.di__group {
-        margin-top: -15rem;
-    }
-
-    .fried_ph {
-        width: 50%;
-    }
-
-    .papa_ph {
-        top: -15rem;
-        width: 50%;
-    }
-
-    .app__Lutitle {
-        position: absolute;
-        top: -15rem;
-        left: 0;
-        width: 100%;
-    }
-
     .app__item {
         position: relative;
         padding-left: 0;
-    }
-
-    .app__Luprice {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        padding-top: 0;
-        margin-top: -5rem;
-        text-align: right;
-    }
-
-    #app__Listarea {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        padding-top: 0;
-        margin-top: 0;
-        text-align: right;
     }
 
     #appetizer__area {
@@ -236,46 +165,63 @@
         margin-right: 0;
     }
 
-    /*menupage end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    /*resurve start ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    #reservation_page #wrapper {
+    #reservation_page .wrapper {
         width: 90%;
     }
-
-    /*resurve end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    /*access start 768☆☆☆☆☆☆☆☆☆☆☆☆*/
 
     .shop-access__area {
         margin: 0;
     }
 
+    #footer_contents {
+        width: 100%;
+        /*margin: 0 auto;*/
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
 
-    /*access end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    img.for-ph {
+        width: 30%;
+    }
 }
 
 /* ---------------414px以上の時------------------- */
 
 @media screen and (min-width: 414px) {
 
-    #mobile_app-list,
-    .mobile-head {
-        display: none;
+    .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .col-auto {
+        width: 50%;
     }
 
     .menu-list__inner {
         padding: 0 2rem 0 2rem;
+    }
+
+    span.strong__txt {
+        font-size: 2rem;
     }
 }
 
 /* ---------------414px以下の時------------------- */
 
 @media (max-width: 414px) {
-    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
 
-    /*common*/
+    a.head__shop-logo>img {
+        width: 30%;
+    }
+
     h3 {
         margin-top: -20px;
         margin-bottom: 0;
@@ -285,47 +231,10 @@
         margin-top: 1rem;
     }
 
-    .bf::before {
-        background-size: 100% auto;
-    }
-
-    .bf {
-        margin-bottom: 10px;
-    }
-
-    .app__Lutitle,
-    .app__Luprice,
-    #app__Listarea,
-    .side-img,
-    .pc-head {
-        display: none;
-    }
-
-    div#news .container,
-    #food-menu .container,
-    #about_page .container,
-    #menu_page .container,
-    #party-plan .container,
-    .accessList__area .container,
-    .flex_group,
     #foot_nav {
         display: block;
     }
 
-    .food-menu__area,
-    .course-plan__area,
-    .accessList__ph,
-    .accessList__address,
-    #foot_nav ul li,
-    .news__announce,
-    .news__otherInfo,
-    #shopOrigin__area,
-    #shopDisc__area,
-    .flex_item,
-    #main__item,
-    .pull-right,
-    .pull-left,
-    #mobile_app-list,
     .other__List {
         width: 100%;
     }
@@ -336,22 +245,98 @@
     }
 
     #footer_contents {
-        width: 80%;
-        margin: 100px auto -37px;
+        /*width: 100%;
+        margin: 4% auto -37px;*/
     }
 
-    /*nav*/
     .shop-nav__menu-area {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
-    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
+    .col-auto {
+        width: 100% !important;
+    }
 
-    /*access start 414☆☆☆☆☆☆☆☆☆☆☆☆*/
+    .shadow_box>h3 {
+        margin-top: 2%;
+    }
 
-    .shop-access__area {
-        display: block;
+    .about__inner::after {
+        background: url(../images/lotus-blossom.png) no-repeat center 70%/ 50% auto;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    p.shop__name {
+        background: #fff;
+        margin-bottom: 2%;
+        padding: 2% 0 2% 2%;
+    }
+
+    dl.info__dl {
+        padding-left: 2%;
+    }
+
+    img#survis__pic {
+        margin: 0;
+    }
+
+    .title__bg {
+        height: calc(90vw * 0.3);
+    }
+
+    .title__bg>h2 {
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+
+    .title__bg>h2::after {
+        width: 40%;
+    }
+
+    #survis__contants>ul li {
+        height: auto;
+    }
+
+    #survis__contants::before {
+        display: none;
+    }
+
+    #survis__contants>h3 {
+        margin-top: 10%;
+    }
+
+    #menu___contants.shadow_box {
+        margin-top: 2%;
+    }
+
+    /*#menu__inner,*/
+    #info {
+        margin: 2% 0;
+    }
+
+    img.for-ph {
+        display: none;
+    }
+
+    h4.caption__title {
+        font-size: 100%;
+    }
+
+    .food-menu__area:first-child {
+        margin-top: 2%;
+    }
+
+    .course-plan__pic>img {
+        height: calc(100vw * 0.5);
+    }
+
+    .course-plan-wrap dl.info__dl>dd:last-child {
+        padding-bottom: 0;
     }
 
     .access-nav {
@@ -359,9 +344,6 @@
         flex-wrap: nowrap;
     }
 
-    .shop-access__area {
-        /*        margin: 0;*/
-    }
 
     .shop-access__inner {
         padding-right: 0;
@@ -371,10 +353,15 @@
         margin-bottom: 1rem;
     }
 
-    .store-disc,
-    .shop-access__detail,
-    .shop-access__detail dt,
-    .shop-access__detail dd {
+    .store-disc {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    /*.store-disc,*/
+    dl.shop-access__dl,
+    dl.shop-access__dl dt,
+    dl.shop-access__dl dd {
         width: 100%;
     }
 
@@ -383,17 +370,17 @@
         height: calc(100vw * 0.1);
     }
 
-    .shop-access__detail dt,
-    .shop-access__detail dd {
+    dl.shop-access__dl dt,
+    dl.shop-access__dl dd {
         float: none;
     }
 
-    .shop-access__detail dd {
+    dl.shop-access__dl dd {
         padding-left: 0;
         margin-bottom: 2rem;
     }
 
-    .shop-access__detail dt {
+    dl.shop-access__dl dt {
         padding-bottom: 0;
     }
 
@@ -401,16 +388,11 @@
         border: 1px solid #DBB353;
     }
 
-    /*access end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-
-    /*index start ☆☆☆☆☆☆☆☆☆☆☆☆*/
     .snav__menu-areaList {
         width: 50%;
     }
 
-    /*news*/
-    #news_contants {
+    #about__contants {
         margin-top: 2rem;
     }
 
@@ -420,14 +402,9 @@
         display: block;
     }
 
-    /*info*/
     .info__caption {
         border: none;
         font-size: 2rem;
-    }
-
-    .caption__title {
-        font-size: 100%;
     }
 
     .caption__txt {
@@ -450,12 +427,6 @@
         font-size: 1.2rem;
     }
 
-    .unit__wrap {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-
-    /*foodmenu*/
     .food-menu__txt,
     .menu__select {
         margin-bottom: 20px;
@@ -469,88 +440,32 @@
         text-align: center;
     }
 
-    /*index end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    /*about start ☆☆☆☆☆☆☆☆☆☆☆☆*/
-    #about_page h3 {
-        padding: 5rem 0 2rem;
-    }
-
-    #about_page h3 .aboutme {
-        display: block;
-        font-size: 1.6rem;
-    }
-
-    .sub-image {
-        background-position: 10% 10%, 100% 100%;
-        width: 100%;
-        height: 0;
-        padding-top: 30%;
-        background-size: 10rem;
-    }
-
-    .sub-image::after {
-        top: 0;
-        background-position: 90% 0;
-        background-size: 15rem;
-        width: 100%;
-        height: 0;
-        padding-top: 30%;
-    }
-
-    #about_page .about-sec {
-        margin-bottom: 0;
+    #menu_page .container {
         padding: 0;
     }
 
-    .sub-ph__area {
-        display: block;
-        height: calc(90vw * 0.6);
-        margin-bottom: 50%;
+    .menu-sec,
+    h3#de-title {
+        margin-top: 10%;
     }
 
-    .mo-ph__area,
-    .veg-ph__area,
-    .food-ph__area {
-        background-size: cover;
+    #Lu__area {
+        padding-top: 0;
     }
 
-    .txt-inner {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 50%;
-        background-color: transparent;
+    img.oriental,
+    img.ice-ph,
+    .access-common__ph {
+        height: calc(100vw * 0.5);
     }
 
-    .txt-inner>p {
-        background: rgba(255, 255, 255, 0.4);
-    }
-
-    /*about end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-    /*menupage start ☆☆☆☆☆☆☆☆☆☆☆☆*/
-    #menu_page .container {
-        padding-bottom: 0;
-        margin: 0;
+    h4.Ltitle,
+    h4.Rtitle {
+        background: #ffff;
     }
 
     #mobile_app-list {
         text-align: center;
-    }
-
-    /*common終わり*/
-
-    #menu_page .container {
-        padding-top: 5rem;
-    }
-
-    #menu_page .container.di__group {
-        margin-top: -5rem;
-    }
-
-    .fried_ph {
-        left: 0;
-        width: 100%;
     }
 
     .mobile_Lu-price {
@@ -565,16 +480,8 @@
         padding-bottom: 5%;
     }
 
-    .fried_ph {
-        opacity: 10;
-    }
-
     #pad-ph__area {
         padding-bottom: 0;
-    }
-
-    .papa_ph {
-        display: none;
     }
 
     #main__area {
@@ -594,49 +501,25 @@
         padding: 2rem 0 2rem 0;
     }
 
-    .Ltitle,
-    .Rtitle {
-        padding-bottom: 5%;
-    }
-
-    .option__area:nth-child(2) {
-        margin-left: 0;
-        margin-top: 20%;
-    }
-
     .option__area {
-        margin-bottom: 10%;
-        margin-top: 10%;
-        padding: 0 2rem 2rem;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         height: auto;
+        margin: 0 0 2.44rem;
     }
 
     .option__price {
         width: 25%;
     }
 
-    .listArea.dinner__area {
+    .listArea,
+    .dinner__area {
         padding-top: 2rem;
     }
 
     .drink__Listitem {
         padding-left: 0;
     }
-
-
-    .drink__List,
-    .other__List,
-    .Rtitle,
-    .drink_memo {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-
-    /*menupage end ☆☆☆☆☆☆☆☆☆☆☆☆*/
-
-
-    /*resurve start ☆☆☆☆☆☆☆☆☆☆☆☆*/
 
     table,
     tbody,
@@ -647,21 +530,21 @@
         display: block;
     }
 
-    #reservation_page #wrapper {
+    .explain {
         width: 100%;
     }
 
-    #explain__head::before,
-    #explain__head::after {
-        width: 55px;
+    h2#explain__head::before,
+    h2#explain__head::after {
+        width: 50%;
     }
 
-    #explain__head::before {
-        left: -60px;
+    h2#explain__head::before {
+        left: -50%;
     }
 
-    #explain__head::after {
-        right: -60px;
+    h2#explain__head::after {
+        right: -50%;
     }
 
     .explain__Message {
@@ -674,12 +557,12 @@
         width: 40%;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        margin-right: 2rem;
+        /*margin-right: 2rem;*/
         padding-left: 0.5rem;
     }
 
     .reserv__telList:first-child {
-        margin-left: 2rem
+        /*margin-left: 2rem*/
     }
 
     .reserv__telList::before {
@@ -705,7 +588,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        background: #f8f8f8;
+        background: #ffff;
         width: auto;
     }
 
@@ -715,7 +598,7 @@
     }
 
     .table__date {
-        padding: 2rem;
+        padding: 2rem 0;
     }
 
     .hidden__box {
@@ -757,8 +640,6 @@
     }
 
     button#Confirmation {
-        width: 30%;
+        width: 100%;
     }
-
-    /*resurve end ☆☆☆☆☆☆☆☆☆☆☆☆*/
 }
