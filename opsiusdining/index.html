@@ -31,165 +31,177 @@
     <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
     <!--slick-->
     <script type="text/javascript" src="js/slick.min.js"></script>
-
     <!--jQuery -->
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
-	
+    
 $(document).ready(function() {
   $('.drawer').drawer();
 });
-	</script>
+    </script>
 </head>
 
 <body id="index_page" class="drawer drawer--top">
-    <!----枠①------->
-    <div id="wrapper">
-        <header class="open_nav" role="banner">
-            <h1 class="head"><a class="head__shop-logo" href="index.html"><img src="images/shop_logo.png" alt="opsiusdining" width="237" height="122" /></a></h1>
-            <button type="button" class="drawer-toggle drawer-hamburger">
-                <span class="sr-only">toggle navigation</span>
-                <span class="drawer-hamburger-icon"></span>
-            </button>
-            <!--iphon用のナビ-->
-            <nav class="drawer-nav" role="navigation">
-                <ul class="drawer-menu">
-                    <li><a href="#index_page" title="ホーム">home</a></li>
-                    <li><a href="about.html" title="opusiusdiningについて">about</a></li>
-                    <li><a href="menu.html" title="メニュー">menu</a></li>
-                    <li><a href="party-menu.pdf" target="_blank" title="コースメニュー">coursemenu</a></li>
-                    <li><a href="contact.html" title="コンタクト">contact</a> </li>
-                </ul>
-                <a href="reservation.html" title="予約" class="headnav_reservation" style="color: #fff; padding: 0px 20px;">予約/reservation</a>
-            </nav>
-        </header>
-        <div id="mainwrap">
-            <!--.globalnavi-->
-            <nav id="globalnavi">
-                <ul class="globalnavi__manu-area">
-                    <li class="gnav__menu-areaList"><a class="dotted-line current" href="#" title="HOME">home</a> </li>
-                    <li class="gnav__menu-areaList"><a class="dotted-line" href="about.html" title="ABOUT">about</a></li>
-                    <li class="gnav__menu-areaList"><a class="dotted-line" href="menu.html" title="MENU">menu</a></li>
-                    <li class="gnav__menu-areaList"><a class="dotted-line" href="party-menu.pdf" target="_blank" title="coursemenu">coursemenu</a></li>
-                    <li class="gnav__menu-areaList"><a class="dotted-line" href="contact.html" title="CONTACT">contact</a></li>
-                </ul>
-                <div class="btn-book">
-                    <a class="btn-book__reserv" href="reservation.html" title="reservation" style="color: #fff;">予約/reservation</a>
+    <header class="open_nav col-auto row-col" role="banner">
+        <h1 class="head"><a class="head__shop-logo" href="index.html"><img src="images/shop_logo.png" alt="opsiusdining" width="142.2" height="73.2" /></a></h1>
+        <!-- btn -->
+        <div class="btn__wrap">
+            <p>中目黒・渋谷・自由が丘に店舗を構えるエスニックレストラン</p>
+            <div class="btn__inner">
+                <div class="btn-book" id="contact__btn">
+                    <a class="btn-book__contact" href="contact.html" title="reservation">店舗一覧</a>
                 </div>
-            </nav>
-            <div id="mainvisual" class="slick-box1">
-                <figure><img src="images/index_mainvisual_01.jpg" width="880" height="498" alt="イエローカレー" />
-                </figure>
-                <figure><img src="images/index_mainvisual_02.jpg" width="880" height="498" alt=""></figure>
-                <figure><img src="images/index_mainvisual_03.jpg" width="880" height="498" alt=""></figure>
+                <div class="btn-book" id="reserv__btn">
+                    <a class="btn-book__reserv" href="reservation.html" title="reservation">予約</a>
+                </div>
             </div>
-
-            <!--#shop_nav-->
-            <nav id="shop-nav">
-                <ul class="shop-nav__menu-area">
-                    <li class="snav__menu-areaList"><a data-scroll href="#news" title="news">news</a></li>
-                    <li class="snav__menu-areaList"><a data-scroll href="#information" title="information">information</a> </li>
-                    <li class="snav__menu-areaList"><a data-scroll href="#food-menu" title="foodmenu">foodmenu</a></li>
-                    <li class="snav__menu-areaList"><a data-scroll href="#party-plan" title="partyplan">partyplan</a></li>
-                    <li class="snav__menu-areaList"><a data-scroll href="#access" title="access">access</a></li>
-                </ul>
-            </nav>
         </div>
-        <!--ニュース-->
-        <section id="news_contants" class="shadow_box">
-            <div id="news">
-                <span class="bf"></span>
-                <h3>news</h3>
-                <!--枠-->
+    </header>
+    <!-- ハンバーガーアイコン -->
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+    </button>
+    <!--iphon用のナビ-->
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+            <li><a href="#index_page" title="ホーム">home</a></li>
+            <li><a href="menu.html" title="メニュー">menu</a></li>
+            <li><a href="party-menu.pdf" target="_blank" title="コースメニュー">coursemenu</a></li>
+            <li><a href="contact.html" title="コンタクト">contact</a> </li>
+        </ul>
+        <a href="reservation.html" title="予約" class="headnav_reservation" style="color: #fff; padding: 0px 20px;">予約/reservation</a>
+    </nav>
+    <div id="mainwrap">
+        <!--.globalnavi-->
+        <nav id="globalnavi" class="container">
+            <ul class="globalnavi__manu-area">
+                <li class="gnav__menu-areaList"><a class="dotted-line current" href="#" title="HOME">home</a> </li>
+                <li class="gnav__menu-areaList"><a class="dotted-line" href="menu.html" title="MENU">menu</a></li>
+                <li class="gnav__menu-areaList"><a class="dotted-line" href="party-menu.pdf" target="_blank" title="coursemenu">coursemenu</a></li>
+                <li class="gnav__menu-areaList"><a class="dotted-line" href="contact.html" title="CONTACT">contact</a></li>
+            </ul>
+        </nav>
+        <div id="mainvisual" class="slick-box1">
+            <figure><img src="images/index_mainvisual_01.jpg" width="880" height="498" alt="イエローカレー" />
+            </figure>
+            <figure><img src="images/index_mainvisual_02.jpg" width="880" height="498" alt=""></figure>
+            <figure><img src="images/index_mainvisual_03.jpg" width="880" height="498" alt=""></figure>
+        </div>
+        <!--#shop_nav-->
+        <nav id="shop-nav">
+            <ul class="shop-nav__menu-area row-col">
+                <li class="snav__menu-areaList"><a data-scroll href="#about__contants" title="ABOUT">about</a></li>
+                <li class="snav__menu-areaList"><a data-scroll href="#contact__contants" title="CONTACT">contact</a> </li>
+                <li class="snav__menu-areaList"><a data-scroll href="#survis__contants" title="SURVIS">survis</a></li>
+                <li class="snav__menu-areaList"><a data-scroll href="#menu___contants" title="MENU">menu</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrap">
+        <div class="wrapper_inner">
+            <!--店舗説明-->
+            <section id="about__contants" class="shadow_box">
+                <h2 class="col-auto">ABOUT</h2>
+                <h3 class="col-auto"><span>opsiusdiningについて</span></h3>
+                <div class="about__inner">
+                    <p class="col-auto"><span class="strong__txt">「opsiusdining」は中目黒・渋谷・自由が丘に店舗を構える隠れ家レストランです。</span></p>
+                    <p class="col-auto">タイ人シェフが作る本格的なエスニック料理をお楽しみ頂けるます。昼は緑豊かな景観と夜は時間を忘れさせてくれるようなぬくもりある空間でお客様をお出迎えいたします。お買い物ついでに是非、お立ちより下さい。</p>
+                </div>
+            </section>
+            <!-- contact -->
+            <section id="contact__contants" class="shadow_box">
+                <h2 class="col-auto">CONTACT</h2>
+                <h3 class="col-auto"><span>店舗一覧</span></h3>
+                <div class="btn"><a href="contact.html">MORE INFO</a></div>
                 <div class="container">
-                    <div class="news__announce">
-                        <dl>
-                            <dt class="announce__date Update">2018.07.21</dt>
-                            <dd class="announce__title">営業時間延長のお知らせ</dd>
-                            <dd class="announce__txt">いつもご来店ありがとうございます。
-                                お客様の日頃の感謝の思いを込めて
-                                Dinnertimeを延長いたしました。
-                                皆様のご来店を心よりお待ちして
-                                おります。</dd>
+                    <div class="contact__inner col-auto">
+                        <p class="shop__name">中目黒店</p>
+                        <dl class="info__dl">
+                            <dt>ADDRESS</dt>
+                            <dd>〒153-xxxx<br>
+                                東京都目黒区上目黒1-6-5森ビル2F202</dd>
+                            <dt>TELL</dt>
+                            <dd><a class="tel-link" href="0300000000">TEL：03-0000-0000</a></dd>
                         </dl>
                     </div>
-                    <div class="news__otherInfo">
-                        <div class="otherInfo_spotnews">
-                            <dl>
-                                <dt class="spotnews__date Update">2018.08.09</dt>
-                                <dd class="spotnews__txt">女子会にぴったりのコースメニュー追加しました。
-                                    女子による女子のためのお肉フェア開催！</dd>
-                            </dl>
-                            <span class="more"><a class="link" href="#">続きを読む</a></span>
-                        </div>
-                        <div class="otherInfo_spotnews">
-                            <dl>
-                                <dt class="spotnews__date Update">2018.09.10</dt>
-                                <dd class="spotnews__txt">party couse「select plan」を追加しました！
-                                    お好きなメニューから２品づつお選びいただけます！</dd>
-                            </dl>
-                            <span class="more">詳しくは<a class="link" href="menu.html">メニューページ</a>をご覧ください。</span>
-                        </div>
+                    <div class="contact__inner col-auto">
+                        <p class="shop__name">渋谷店</p>
+                        <dl class="info__dl">
+                            <dt>ADDRESS</dt>
+                            <dd>〒150-xxxx<br>東京都渋谷区道玄坂2-22-2渋谷道玄坂1956　2階</dd>
+                            <dt>TELL</dt>
+                            <dd><a class="tel-link" href="0300000000">TEL：03-0000-0000</a></dd>
+                        </dl>
+                    </div>
+                    <div class="contact__inner col-auto">
+                        <p class="shop__name">自由が丘店</p>
+                        <dl class="info__dl">
+                            <dt>ADDRESS</dt>
+                            <dd>〒152-xxxx<br>東京都目黒区自由が丘2-11-16エクセレンスビル2F</dd>
+                            <dt>TELL</dt>
+                            <dd><a class="tel-link" href="0300000000">TEL：03-0000-0000</a></dd>
+                        </dl>
                     </div>
                 </div>
-            </div>
-            <!--news-->
-            <div class="btn"><a href="#">View more</a></div>
-        </section>
-        　　　　　
-        <!--インフォメーション-->
-        <section id="info_contents" class="shadow_box">
-            <div id="information">
-                <span class="bf"></span>
-                <h3>information</h3>
-                <!--#shop_info_01-->
-                <div class="container">
-                    <!--#lunch-->
+            </section>
+        </div>
+    </div>
+    <!-- survis -->
+    <div class="title__bg">
+        <h2>SURVIS</h2>
+    </div>
+    <div class="wrap">
+        <div class="wrapper_inner">
+            <!-- <img id="survis__pic" src="images/mortar.jpg" width="344" height="236" alt="スパイス"> -->
+            <section id="survis__contants" class="shadow_box">
+                <h3 class="col-auto"><span>当店の特徴</span></h3>
+                <ul>
+                    <li>当店では、ご要望に応じてスパイシーな味つけから、マイルドな味つけまで、 お口に合うよう柔軟な姿勢で、お料理をご用意します。</li>
+                    <li>パッタイの麺にはグルテンフリーでヘルシーな生米麺「クイッテオ」を使用していて、もちっとした歯ごたえのある食感とほのかに香る米の香り　をお楽しみ頂けます。</li>
+                    <li>契約農家を中心に全国農家から 鮮度にこだわった野菜を丁寧に調理しています。</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- MENU -->
+    <div class="title__bg" id="bg__pic">
+        <h2>MENU</h2>
+    </div>
+    <div class="wrap">
+        <div class="wrapper_inner">
+            <section id="menu___contants" class="shadow_box">
+                <div class="unit__wrap">
+                    <div class="info__tab">Free wifi完備</div>
+                    <div class="info__tab">Barthday pleat</div>
+                </div>
+                <div class="container row-col" id="menu__inner">
                     <div id="info__lunch">
-                        <img src="images/info_lunch.jpg" alt="lunchtime" width="560" height="419" />
-                        <div class="info__caption">
-                            <h4 class="caption__title">Lunch</h4>
-                            <p class="caption__txt">10:00 - 14:00</p>
-                        </div>
+                        <h4 class="caption__title">Lunch</h4>
                     </div>
-                    <!--#Dinner-->
                     <div id="info__dinner">
-                        <img src="images/info_dinner.jpg" alt="dinnertime" width="560" height="419" />
-                        <div class="info__caption">
-                            <h4 class="caption__title">Dinner</h4>
-                            <p class="caption__txt">17:00 - 23:00</p>
-                        </div>
+                        <h4 class="caption__title">Dinner</h4>
                     </div>
                 </div>
-                <!--#shop_info_02-->
-                <div class="container unit__wrap">
-                    <div class="unit wifi">
-                        <h5 class="unit__title">Wifi ok</h5>
-                        <p class="unit__txt">全席利用可</p>
-                    </div>
-                    <div class="unit power">
-                        <h5 class="unit__title">Power free</h5>
-                        <p class="unit__txt">一部席に限ります</p>
-                    </div>
-                    <div class="unit smoke">
-                        <h5 class="unit__title">smokearea</h5>
-                        <p class="unit__txt">一部席に限ります</p>
-                    </div>
-                    <div class="unit barth">
-                        <h5 class="unit__title">Barthday pleat</h5>
-                        <p class="unit__txt">事前予約要</p>
-                    </div>
+                <div class="container row-col" id="info">
+                    <dl class="info__dl">
+                        <dt>LUNCH</dt>
+                        <dd>10:00～14:00</dd>
+                        <dt>PRICE</dt>
+                        <dd>￥880yen～</dd>
+                    </dl>
+                    <dl class="info__dl">
+                        <dt>DINNER</dt>
+                        <dd>17:00～23:00 LO 22:30</dd>
+                        <dt>PRICE</dt>
+                        <dd>￥1000yen～</dd>
+                    </dl>
                 </div>
-            </div>
-        </section>
-        <!--#menu_conents-->
-        <section id="menu_conents" class="shadow_box">
-            <div id="food-menu">
-                <span class="bf"></span>
-                <h3>foodmenu</h3>
+                <h3 class="col-auto"><span>人気メニュー</span></h3>
+                <div class="btn"><a href="menu.html">MENU一覧を見る</a></div>
                 <div class="container">
-                    <div class="food-menu__area">
-                        <div class="op"><img src="images/pad-thai-small.jpg" width="375" height="317" alt="パッタイ" /></div>
+                    <div class="food-menu__area col-auto">
+                        <div class="op food-menu__pic"><img src="images/pad-thai-small.jpg" width="375" height="317" alt="パッタイ" /></div>
                         <h5 class="food-menu__title">パッタイ</h5>
                         <p class="food-menu__txt">歯ごたえや香りにこだわった生米麺を
                             使っています。
@@ -201,16 +213,16 @@ $(document).ready(function() {
                                 （別途料金かかります。）</span>
                         </div>
                     </div>
-                    <div class="food-menu__area">
-                        <div class="op"><img src="images/nashigoren.jpg" width="375" height="317" alt="ナシゴレン" /></div>
+                    <div class="food-menu__area col-auto">
+                        <div class="op food-menu__pic"><img src="images/nashigoren.jpg" width="375" height="317" alt="ナシゴレン" /></div>
                         <h5 class="food-menu__title">ナシゴレン</h5>
                         <p class="food-menu__txt">たっぷりの野菜とスパイスを使用した
                             インドネシア風のチャーハン。
                             甘い味付けになっているので辛さは
                             お好みで調節できます。</p>
                     </div>
-                    <div class="food-menu__area">
-                        <div class="op"><img src="images/redcurry.jpg" width="375" height="317" alt="レッドカレー" /></div>
+                    <div class="food-menu__area col-auto">
+                        <div class="op food-menu__pic"><img src="images/redcurry.jpg" width="375" height="317" alt="レッドカレー" /></div>
                         <h5 class="food-menu__title">レッドカレー</h5>
                         <p class="food-menu__txt">たっぷりとパクチーをトッピングした
                             タイ風カレー。
@@ -222,170 +234,98 @@ $(document).ready(function() {
                                 お好きなライスをお選び下さい。</span>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="btn"><a href="menu.html">View more</a></div>
-        </section>
-
-        <!--#party_conents-->
-        <section id="party_conents" class="shadow_box">
-            <div id="party-plan">
-                <span class="bf"></span>
-                <h3>partyplan</h3>
+                </div> <!-- container -->
+                <h3 class="col-auto"><span>PARTYPLAN</span></h3>
+                <div class="btn"><a href="party-menu.pdf" target="_blank">他のPARTYPLANを見る</a></div>
                 <div class="container">
-                    <div class="course-plan__area">
+                    <div class="course-plan__area col-auto">
                         <h5>￥2,900 Food Plan</h5>
-                        <div class="op"><img src="images/satay-chicken.jpg" alt="ソテーチキン" width="640" height="426" /></div>
+                        <div class="op course-plan__pic"><img src="images/satay-chicken.jpg" alt="ソテーチキン" width="640" height="426" /></div>
                         <div class="course-plan-wrap">
-                            <p class="course-plan__price">全7品(4名様～)</p>
-                            <ul class="course-plan__List">
-                                <li class="course-plan__Listitem">ソテーチキンのピーナッツソース添え</li>
-                                <li class="course-plan__Listitem">ポメロサラダ</li>
-                                <li class="course-plan__Listitem">パッタイ</li>
-                                <li class="course-plan__Listitem">ガパオ</li>
-                                <li class="course-plan__Listitem">デザート</li>
-                            </ul>
+                            <dl class="info__dl">
+                                <dt>PRICE</dt>
+                                <dd>￥2900yen<br>※4名様から承ります</dd>
+                                <dt>MENU</dt>
+                                <dd>
+                                    <ul>
+                                        <li>ソテーチキンのピーナッツソース添え</li>
+                                        <li>ポメロサラダ</li>
+                                        <li>パッタイ</li>
+                                        <li>ガパオ</li>
+                                        <li>デザート</li>
+                                    </ul>
+                                </dd>
+                            </dl>
                         </div>
                     </div>
                     <!--02-->
-                    <div class="course-plan__area">
+                    <div class="course-plan__area col-auto">
                         <h5>￥3,900 Food Plan</h5>
-                        <div class="op"><img src="images/thai-fried-rice.jpg" alt="チャーハン" width="640" height="426" /></div>
+                        <div class="op course-plan__pic"><img src="images/thai-fried-rice.jpg" alt="チャーハン" width="640" height="426" /></div>
                         <div class="course-plan-wrap">
-                            <p class="course-plan__price">全8品(6名様～)</p>
-                            <ul class="course-plan__List">
-                                <li class="course-plan__Listitem">ソテーチキンのピーナッツソース添え</li>
-                                <li class="course-plan__Listitem">ソムタム</li>
-                                <li class="course-plan__Listitem"> 海老のすり身揚げ</li>
-                                <li class="course-plan__Listitem">グリーンカレー</li>
-                                <li class="course-plan__Listitem">ガパオ</li>
-                                <li class="course-plan__Listitem">パッタイ</li>
-                                <li class="course-plan__Listitem">トムヤムクン</li>
-                                <li class="course-plan__Listitem">デザート</li>
-                            </ul>
+                            <dl class="info__dl">
+                                <dt>PRICE</dt>
+                                <dd>￥3900yen<br>※6名様から承ります</dd>
+                                <dt>MENU</dt>
+                                <dd>
+                                    <ul>
+                                        <li>ソテーチキンのピーナッツソース添え</li>
+                                        <li>ソムタム</li>
+                                        <li>海老のすり身揚げ</li>
+                                        <li>グリーンカレー</li>
+                                        <li>ガパオ</li>
+                                        <li>パッタイ</li>
+                                        <li>トムヤムクン</li>
+                                        <li>デザート</li>
+                                    </ul>
+                                </dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
-                <!--03-->
-
-                <div class="select-plan__area">
-                    <h5>￥4,900 Select Plan</h5>
-                    <p class="course-plan__price">全10品(10名様～)</p>
-                    <p class="course-plan__desc">
-                        前菜、メイン料理、サイドメニュー、スープ、デザートの中から
-                        各2品お選び頂けるコースです。<br>
-                        詳しいメニューは<a class="link" href="#">こちら</a></p>
-                </div>
-            </div>
-            <div class="btn"><a href="reservation.html">予約する</a></div>
-        </section>
-        <!--#access_conents-->
-        <section id="access_conents" class="shadow_box">
-            <div id="access">
-                <span class="bf"></span>
-                <h3>access</h3>
-                <div class="accessList__area">
-                    <div class="container">
-                        <div class="accessList__ph">
-                            <img src="images/access_nakameguro.jpg" width="561" height="419" alt="中目黒店" />
-                        </div>
-                        <div class="accessList__address">
-                            <img src="images/shop_logo.png" class="shop_add_logo" width="237" height="122" alt="shoplogo" />
-                            <h5>中目黒店</h5>
-                            <div class="accessList__inner">
-                                <p><a class="tel-link" href="tel:0300000000">TEL：03-0000-0000</a></p>
-                                〒153-xxxxbr<br>
-                                東京都目黒区上目黒1-6-5<br>
-                                森ビル2F202<br>
-                                「中目黒駅」より徒歩5分
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accessList__area">
-                    <div class="container">
-                        <div class="accessList__ph">
-                            <img src="images/access_shibuya.jpg" width="561" height="419" alt="渋谷店" />
-                        </div>
-                        <div class="accessList__address">
-                            <img src="images/shop_logo.png" class="shop_add_logo" width="237" height="122" alt="shoplogo" />
-                            <h5>渋谷店</h5>
-                            <div class="accessList__inner">
-                                <p><a class="tel-link" href="tel:0300000000">TEL：03-0000-0000</a></p>
-                                〒150-xxxx<br>
-                                東京都渋谷区道玄坂2-22-2<br>
-                                渋谷道玄坂1956　2階<br>
-                                「渋谷駅」1番出口より徒歩4分
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accessList__area">
-                    <div class="container">
-                        <div class="accessList__ph">
-                            <img src="images/access_jiyugaoka.jpg" width="561" height="419" alt="自由が丘店" />
-                        </div>
-                        <div class="accessList__address">
-                            <img src="images/shop_logo.png" class="shop_add_logo" width="237" height="122" alt="shoplogo" />
-                            <h5>自由が丘店</h5>
-                            <div class="accessList__inner">
-                                <p><a class="tel-link" href="tel:0300000000">TEL：03-0000-0000</a></p>
-                                〒152-xxxx<br>
-                                東京都目黒区自由が丘2-11-16<br>
-                                エクセレンスビル2F<br>
-                                「自由ヶ丘駅」正面口より徒歩2分
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="btn"><a href="contact.html">Access</a></div>
-        </section>
-</div> <!-- wrapper -->
-            <div id="footer_contents">
-            <div class="footarea">
-                <div class="left_box">
-                    <a data-scroll href="#index_page" class="page_top_btn"><span>page top</span></a>
-                </div>
-            </div>
-            <div class="footarea">
-                <div class="next_box toabout">
-                    <a href="about.html" class="next_page_btn"><span>About</span></a>
-                </div>
+            </section>
+        </div>
+    </div>
+    　　　　　
+    <div id="footer_contents" class="row-col">
+        <div class="footarea">
+            <div class="left_box">
+                <a data-scroll href="#index_page" class="page_top_btn"><span>page top</span></a>
             </div>
         </div>
-        <footer>
-            <nav id="foot_nav">
-                <ul>
-                    <li><a href="#index_page" title="HOME">home</a></li>
-                    <li><a href="about.html" title="ABOUT">about</a></li>
-                    <li><a href="menu.html" title="MENU">menu</a></li>
-                    <li><a href="contact.html" title="CONTACT">contact</a></li>
-                </ul>
-            </nav>
-            <small class="copyright">COPYRIGHT &copy; opsius,INC. 2018</small>
-        </footer>
-
-
+        <div class="footarea">
+            <div class="next_box toabout">
+                <a href="menu.html" class="next_page_btn"><span>menu</span></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav id="foot_nav" class="container">
+            <ul>
+                <li><a href="#index_page" title="HOME">home</a></li>
+                <li><a href="menu.html" title="MENU">menu</a></li>
+                <li><a href="contact.html" title="CONTACT">contact</a></li>
+            </ul>
+        </nav>
+        <small class="copyright">COPYRIGHT &copy; opsius,INC. 2018</small>
+    </footer>
     <script type="text/javascript">
-        $(function() {
-            $('.slick-box1').slick({
-                prevArrow: '<div class="slide-arrow prev-arrow"><span class="L-arrow"></span></div>',
-                nextArrow: '<div class="slide-arrow next-arrow"><span class="R-arrow"></span></div>',
-                autoplay: true,
-                arrows: true,
-                dots: true,
-                draggable: true,
-                swipe: true,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear'
+    $(function() {
+        $('.slick-box1').slick({
+            prevArrow: '<div class="slide-arrow prev-arrow"><span class="L-arrow"></span></div>',
+            nextArrow: '<div class="slide-arrow next-arrow"><span class="R-arrow"></span></div>',
+            autoplay: true,
+            arrows: true,
+            dots: true,
+            draggable: true,
+            swipe: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
 
-            });
         });
-
+    });
     </script>
 </body>
 
